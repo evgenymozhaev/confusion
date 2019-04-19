@@ -26,8 +26,12 @@ import {AppRoutingModule} from './app-routing/app-routing.module';
 import {PromotionService} from './services/promotion.service';
 import {LeaderService} from './services/leader.service';
 import {LoginComponent} from './login/login.component';
-import {MatCheckboxModule, MatDialogModule, MatFormFieldModule, MatInputModule} from '@angular/material';
+import {MatCheckboxModule, MatDialogModule, MatFormFieldModule, MatInputModule, MatTableModule} from '@angular/material';
 import {FormsModule} from '@angular/forms';
+import {MatSelectModule} from '@angular/material';
+import {MatSlideToggleModule} from '@angular/material';
+import {ReactiveFormsModule} from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -55,7 +59,11 @@ import {FormsModule} from '@angular/forms';
     MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatSelectModule,
+    MatSlideToggleModule,
+    ReactiveFormsModule,
+    MatTableModule
   ],
   providers: [
     DishService,
